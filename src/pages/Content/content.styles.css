@@ -1,0 +1,36 @@
+.galxe-extension-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 9999;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #0057ff, #7389ff, #0057ff);
+  background-size: 2000px 100%;
+  font-family: "Mona-Sans-ExtraBoldWide";
+  border-bottom: 1px solid #0057ff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, .5);
+  animation: slide 1.5s linear infinite;
+  text-align: center;
+}
+
+#galxe-extension-header + div {
+  margin-top: 40px;
+  pointer-events: none;
+}
+
+#galxe-extension-header + div #topNavbar {
+  top: 40px;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2000px 0;
+  }
+}
